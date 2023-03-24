@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1 >Form</h1>
+            <div class="group">
+                <label class="inputlabel" for="name">Name</label>
+                <input type="text" id="name" minlength="3" required>
+            </div>
+            <div class="group">
+                <label class="inputlabel" for="mail">Email</label>
+                <input type="email" id="mail" required>
+            </div>
+            <div class="group">
+                <label class="inputlabel" for="password">Password</label>
+                <input type="password" id="password" placeholder="password" required>
+            </div>
+            <div class="group">
+                <label  class="inputlabel" for="reppassword">Confirm Password</label>
+                <input type="password" id="reppassword" placeholder="password">
+            </div>
+            <div class="group">
+                <label class="inputlabel" for="Gender">Gender</label>
+                <input type="radio" id="male" name="male" value="Male">
+                <label>Male</label>
+                <input type="radio" id="female" name="Female" value="Female">
+                <label>Female</label>
+                <input type="radio" id="other" name="other" value="other">
+                <label>Other</label>
+            </div>
+
+            <div class="group">
+                <label class="inputlabel" for="interest">Interests</label>
+                <input type="checkbox" id="sports" name="sports" value="sports">
+                <label>Sports</label>
+                <input type="checkbox" id="music" name="music" value="music">
+                <label>Music</label>
+                <input type="checkbox" id="travel" name="travel" value="travel">
+                <label>Travel</label>
+            </div>
+
+            <div class="group">
+                <select name="country" id="country">
+                    <option disabled selected hidden>Choose country</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="England">England</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Italy">Italy</option>
+                    <option value="France">France</option>
+                    <option value="Denmark">Denmark</option>
+                </select required>
+            </div>
+            
+            <div class="group">
+                <label class="inputlabel" for="range">Choose a value:</label>
+                <input id="range" type="range" min="0" max="100" value="50" class="range blue" oninput="rangeValue.innerText = this.value"/>
+                <p id="rangeValue">50</p>
+            </div>
+
+           
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
